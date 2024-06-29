@@ -21,13 +21,13 @@ Notice that I did not place `.env` inside `.gitignore`.
 
 # Decisions Made
 
-1. No emails and complex workflows, hence no password resets, might add a social login as an escape hatch some day. Or not.
+1. No emails and complex workflows, hence no password resets, might add a social login as an escape hatch some day.
 
 2. Only a single active user session is allowed. Managing multiple sessions with multiple cookies with all the permutations and expiry times, do you really want to go there?
 
 3. Only the `bun run dev` mode.
 
-4. No middleware.
+4. Almost no middleware.
 
 # Some Thoughts About (BE + FE) vs Metaframeworks
 
@@ -37,11 +37,13 @@ Pros of (BE + FE):
 
 - Feels like learning what the web is, as opposed to, say, Next.js.
 
-Cons (BE + FE):
+These advantages are huge, esp. when considering how broken everything is.
+
+Cons of (BE + FE):
 
 - Two projects instead of one. Separate github repos, build systems, .env shenanigans, BE vs FE routing, docs, hosting... With dev and prod branches this becomes four. 
 
-- Some choice paralysis: Express vs say Hono, SQLite vs PostgreSQL, Drizzle with SQL strings vs Drizzle all the way, Bun vs Node.
+- Some choice paralysis, but this holds mostly for the backend, and it is not very severe. Express vs say Hono, SQLite vs PostgreSQL, Drizzle with the SQL strings (select) vs Drizzle all the way (query), Bun vs Node.
 
-- Most of the real stuff seems to be shipped with Next.js, even by indie developers. It is kind of like Unity/Unreal thing.
+- [A lot of people](https://2023.stateofjs.com/en-US/libraries/meta-frameworks/) are now pushing metaframeworks. Next.js is no Unity/Unreal, but still something to watch for.  
 
