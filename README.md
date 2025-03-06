@@ -1,12 +1,14 @@
-> "The narrowest path is always the holiest." - Depeche Mode, 1993 
+> "Storage as a service, network as a service, cpu as a service, your mom as a service..."
+>
+> — *nexovec, 2024* 
 
 # Introduction
 
-This is the second iteration of my quest for the holy grail, i.e. the best way to build CRUD web apps.
+This is the second iteration of my quest for the holy grail - the best way to build CRUD web apps.
 
-Previously, I have considered metaframeworks: [Next.js](https://github.com/ugurkellecioglu/next-14-lucia-auth-postgresql-drizzle-typescript-example/issues/1), [SvelteKit](https://github.com/edwardspresume/sveltekit-lucia-auth-v3-example/issues/3), and [Astro](https://github.com/aabbtree77/session-auth-starter). However, they are not reliable, they only allow you to move faster initially for certain types of VC-funded business settings.
+Previously, I have considered metaframeworks: [Next.js](https://github.com/ugurkellecioglu/next-14-lucia-auth-postgresql-drizzle-typescript-example/issues/1), [SvelteKit](https://github.com/edwardspresume/sveltekit-lucia-auth-v3-example/issues/3), and [Astro](https://github.com/aabbtree77/session-auth-starter). However, they are not reliable.
 
-Therefore, I have removed Astro by splitting everything into frontend (Vite + React) and backend (Hono + Drizzle + bun:sqlite). I have removed Lucia and rewrote authentication from scratch too. DB is now an explicitly controlled system, not a connector/adapter thing.
+Therefore, I have removed Astro by splitting everything into frontend (Vite + React) and backend (Hono + Drizzle + bun:sqlite). I have removed Lucia too. The DB is now an explicitly controlled system, not a connector/adapter thing.
 
 This code is the frontend part. See [the accompanied backend](https://github.com/aabbtree77/auth-starter-backend).
 
