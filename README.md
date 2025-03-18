@@ -39,9 +39,12 @@ Pros (BE + FE):
 
 - More help from ChatGPT or DeepSeek.
 
-Con (BE + FE):
+Cons (BE + FE):
 
-- Separate github repos, runtimes, build systems, .env files, routing, hosting, documenting...
+- Two separate projects (deployment, runtimes, build systems, state, routing, .env...). Enforcing a single repo is reinventing a metaframework.
 
-Some interesting cases to consider: PocketBase (BE + FE) and Payload CMS (Next.js).
+- It must be an SPA. An MPA with SSR/SSG React and hydration is, again, reinventing a metaframework.
+
+- If we remove React, we’re back to static templating and raw strings. At the very least, React provides JSX, useState, and useEffect.
+
 
